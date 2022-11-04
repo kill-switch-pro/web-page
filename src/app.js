@@ -79,7 +79,7 @@ function App() {
           <img src={github} alt="github" />
         </div>
       </main>
-      <footer></footer>
+      
 
       <footer className="footer2">
         <img src={zuri} alt="zuri-logo" />
