@@ -4,8 +4,9 @@ import github from './assets/github.png';
 import I4G from './assets/I4G.png';
 import zuri from './assets/Zuri-internship.png';
 import slack from './assets/slack.png';
-
+/* */
 function App() {
+  const contact = '/contact.html';
   const twitter = 'https://twitter.com/@psalmwell';
   const zuriBtn = 'https://training.zuri.team/';
   const zuriBooks = 'http://books.zuri.team/';
@@ -27,6 +28,9 @@ function App() {
       </header>
       <main className='container'>
         <div className='buttons'>
+          
+          <a href="{contact}"> contact</a>
+
           <a href={twitter} id='twitter'>
             Twitter Link
           </a>
