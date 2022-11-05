@@ -73,6 +73,7 @@ function App() {
           <a href={zuriDesign} id="book__design">
             Design Books
           </a>
+          <a> contact me </a>
         </div>
         <div className="icons">
           <img src={slack} alt="slack" />
