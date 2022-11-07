@@ -23,12 +23,7 @@ const Contact = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [checkBoxError, setCheckBoxError] = useState(false);
 
-  function ValidateEmail(mail) {
-    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(mail)) {
-      return true;
-    }
-    return false;
-  }
+  
 
   function handleSubmit() {
     if (firstName === "") {
@@ -53,10 +48,7 @@ const Contact = () => {
       setEmailErrorMsg("Email is required");
       setEmailHasError(true);
     }
-    if (!ValidateEmail(email)) {
-      setEmailErrorMsg("Please enter a valid email");
-      setEmailHasError(true);
-    }
+    
 
     if (!isChecked) {
       setCheckBoxError(true);
@@ -75,14 +67,6 @@ const Contact = () => {
     //   setMessageHasError(true)
     // }
   }
-
-  function checkEmail(email) {
-    if (!ValidateEmail(email)) {
-      setEmailErrorMsg("Please enter a valid email");
-      setEmailHasError(true);
-    }
-  }
-
   return (
     <div className="contact_container">
       <h1>Contact Me</h1>
@@ -122,7 +106,6 @@ const Contact = () => {
         <input
           type="email"
           id="email"
-          onBlur={(e) => checkEmail(e.target.value)}
           onFocus={() => setEmailHasError(false)}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="yourname@gmail.com"

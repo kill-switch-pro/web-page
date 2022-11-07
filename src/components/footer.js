@@ -1,5 +1,4 @@
 import React from "react";
-import profileImage from "../assets/userProfile.jpeg";
 import I4G from "../assets/I4G.png";
 import zuri from "../assets/Zuri-internship.png";
 
